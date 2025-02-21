@@ -578,15 +578,7 @@ article {
     transition: opacity 0.4s ease;
 }
 
-nav {
-    position: absolute;
-    top: -60px;
-    left: 0;
-    width: 100%;
-    background-color: none;
-    z-index: 100;
-    padding: 8px;
-}
+ 
 
 #topMenuList {
     margin: 0;
@@ -596,6 +588,31 @@ nav {
     justify-content: center;
     gap: 16px;
     list-style: none;
+}
+
+
+nav {
+    position: fixed;  /* ثابت نگه داشتن نوار */
+    top: 0;  /* همیشه در بالای صفحه */
+    left: 0;
+    width: 100%;
+    background-color:transparent;
+    z-index: 1000;
+    padding: 12px;
+  
+    transition: all 0.3s ease;
+}
+
+/* برای نسخه موبایل */
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 8px;
+    }
+    
+    #topMenuList {
+        flex-direction: column;
+        gap: 8px;
+    }
 }
 
 #topMenuList li a {
