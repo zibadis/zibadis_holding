@@ -78,7 +78,7 @@
       { label: "services", link: "./src/pages/asaiejadoo/services.html" },
       ],
       // 7-shafayaft
-      [,
+      [
         { label: "apps", link: "./src/pages/shafayaft/apps.html" },
         { label: "blog", link: "./src/pages/shafayaft/blog.html" },
         { label: "tutorial", link: "./src/pages/shafayaft/tutorial.html" },
@@ -88,7 +88,7 @@
        
       ],
       //  8-yottabyte
-      [,
+      [
         { label: "apps", link: "./src/pages/yottabyte/apps.html" },
         { label: "blog", link: "./src/pages/yottabyte/blog.html" },
         { label: "tutorial", link: "./src/pages/yottabyte/tutorial.html" },

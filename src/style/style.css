@@ -583,11 +583,13 @@ article {
 #topMenuList {
     margin: 0;
     padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
+    /* display: flex; */
+  
+ 
     list-style: none;
+	 
+
+ 
 }
 
 
@@ -595,7 +597,7 @@ nav {
     position: fixed;  /* ثابت نگه داشتن نوار */
     top: 0;  /* همیشه در بالای صفحه */
     left: 0;
-    width: 100%;
+   
     background-color:transparent;
     z-index: 1000;
     padding: 12px;
@@ -604,23 +606,16 @@ nav {
 }
 
 /* برای نسخه موبایل */
-@media screen and (max-width: 768px) {
-    nav {
-        padding: 8px;
-    }
-    
-    #topMenuList {
-        flex-direction: column;
-        gap: 8px;
-    }
-}
+ 
 
 #topMenuList li a {
     color: black;
     text-decoration: none;
     padding: 4px 8px;
-    border-radius: 4px;
+    border-radius: 12px;
     transition: all 0.3s;
+	margin: 2px;
+	padding: 2px;
 }
 
 #topMenuList li a:hover {
@@ -675,9 +670,23 @@ button.close-modal:hover {
     margin: auto;
     padding: 20px;
     text-align: center;
-
+	
+background-color: #A3BAD3;
 }
-
+#icons-container{
+ 
+	width: 80%;
+	height: 100%;
+	position: relative;
+	margin-left: 100px;
+}
+#icons-container::after{
+	content: "";
+	position: absolute;
+	left: 0;
+	height: 100%;
+	border:0.5px solid aquamarine; ;
+}
 /* Item Grid */
 .item-wrapper {
     width: 80px;
@@ -691,6 +700,7 @@ button.close-modal:hover {
     justify-content: center;
     text-align: center;
     text-decoration: none;
+	
 
 }
 
@@ -724,11 +734,7 @@ button.close-modal:hover {
 
 }
 
-/* .blurred-background {
-    width: 100%;
-    height: 100%;
-
-} */
+ 
 
 #preloader {
     position: fixed;
