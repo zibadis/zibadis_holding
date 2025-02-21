@@ -21,80 +21,64 @@
    
 
         { label: "apps", link: "./src/pages/3desite/apps.html" },
-        { label: "blog", link: "./src/pages/3desite/blog.html" },
-        { label: "tutorial", link: "./src/pages/3desite/tutorial.html" },
+      
         { label: "about", link: "./src/pages/3desite/about.html" },
-        { label: "shop", link: "./src/pages/3desite/shop.html" },
-        { label: "services", link: "./src/pages/3desite/services.html" },
+     
       
       ],
       //    2-Antopeloni
       [
      
-      { label: "apps", link: "./src/pages/antopleoni/apps.html" },
-      { label: "blog", link: "./src/pages/antopleoni/blog.html" },
-      { label: "tutorial", link: "./src/pages/antopeloni/tutorial.html" },
+      { label: "apps", link: "./src/pages/antopeloni/apps.html" },
+     
       { label: "about", link: "./src/pages/antopeloni/about.html" },
-      { label: "shop", link: "./src/pages/antopeloni/shop.html" },
-      { label: "services", link: "./src/pages/antopeloni/services.html" },
+     
       ],
       //  3-Zibadis
       [ 
          { label: "apps", link: "./src/pages/zibadis/apps.html" },
-         { label: "blog", link: "./src/pages/zibadis/blog.html" },
-         { label: "tutorial", link: "./src/pages/zibadistutorial.html" },
+    
+        
          { label: "about", link: "./src/pages/zibadis/about.html" },
-         { label: "shop", link: "./src/pages/zibadis/shop.html" },
-         { label: "services", link: "./src/pages/zibadis/services.html" },
-     
+   
       ],
       //  4-zibadisplay
       [ 
         { label: "apps", link: "./src/pages/zibadisplay/apps.html" },
-        { label: "blog", link: "./src/pages/zibadisplay/blog.html" },
-        { label: "tutorial", link: "./src/pages/zibadisplay/tutorial.html" },
+       
         { label: "about", link: "./src/pages/zibadisplay/about.html" },
-        { label: "shop", link: "./src/pages/zibadisplay/shop.html" },
-        { label: "services", link: "./src/pages/zibadisplay/services.html" },
+ 
       ],
       //5-zinat.net
       [
      
       { label: "apps", link: "./src/pages/zinatnet/apps.html" },
-      { label: "blog", link: "./src/pages/zinatnet/blog.html" },
-      { label: "tutorial", link: "./src/pages/zinatnet/tutorial.html" },
+      
       { label: "about", link: "./src/pages/zinatnet/about.html" },
-      { label: "shop", link: "./src/pages/zinatnet/shop.html" },
-      { label: "services", link: "./src/pages/zinatnet/services.html" },
+ 
       ],
       // 6-Asaiejadoo 
       [
      
       { label: "apps", link: "./src/pages/asaiejadoo/apps.html" },
-      { label: "blog", link: "./src/pages/asaiejadoo/blog.html" },
-      { label: "tutorial", link: "./src/pages/asaiejadoo/tutorial.html" },
+ 
       { label: "about", link: "./src/pages/asaiejadoo/about.html" },
-      { label: "shop", link: "./src/pages/asaiejadoo/shop.html" },
-      { label: "services", link: "./src/pages/asaiejadoo/services.html" },
+ 
       ],
       // 7-shafayaft
       [
         { label: "apps", link: "./src/pages/shafayaft/apps.html" },
-        { label: "blog", link: "./src/pages/shafayaft/blog.html" },
-        { label: "tutorial", link: "./src/pages/shafayaft/tutorial.html" },
+ 
         { label: "about", link: "./src/pages/shafayaft/about.html" },
-        { label: "shop", link: "./src/pages/shafayaft/shop.html" },
-        { label: "services", link: "./src/pages/shafayaft/services.html" },
+   
        
       ],
       //  8-yottabyte
       [
         { label: "apps", link: "./src/pages/yottabyte/apps.html" },
-        { label: "blog", link: "./src/pages/yottabyte/blog.html" },
-        { label: "tutorial", link: "./src/pages/yottabyte/tutorial.html" },
+       
         { label: "about", link: "./src/pages/yottabyte/about.html" },
-        { label: "shop", link: "./src/pages/yottabyte/shop.html" },
-        { label: "services", link: "./src/pages/yottabyte/services.html" },
+     
         
       ],
     ];
