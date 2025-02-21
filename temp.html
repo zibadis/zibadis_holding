@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Page Loader</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav {
+            background: #333;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+        nav ul li a:hover {
+            background: #555;
+        }
+        .container {
+            padding: 20px;
+        }
+        .site-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .site-item {
+            width: 200px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .site-item img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+        }
+        .content-area {
+            border: 1px solid #ccc;
+            margin-top: 20px;
+            padding: 20px;
+            min-height: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ناوبری -->
+    <nav>
+        <ul id="navMenu"></ul>
+    </nav>
+
+    <!-- محتوای سایت -->
+    <div class="container">
+        <div class="site-list" id="siteList"></div>
+        <div class="content-area" id="contentContainer">
+            <p>محتوا در اینجا نمایش داده خواهد شد...</p>
+        </div>
+    </div>
+
+    <script>
+        // داده‌های JSON
+        const plateIcons = [
+            'src/images/logos/3dEsite.png',
+            'src/images/logos/Antopeloni.png',
+            'src/images/logos/Zibadis.png',
+            'src/images/logos/ZibadisPlay.png',
+            'src/images/logos/ZinatNet.png',
+            'src/images/logos/AsaieJadoo.png',
+            'src/images/logos/sahfayaft.png',
+            'src/images/logos/yottabyte.png',
+        ];
+
+        const sitePaths = [
+            'src/pages/3desite/apps.html',
+            'src/pages/3desite/apps.html',
+            'src/pages/3desite/apps.html',
+            'src/pages/3desite/apps.html',
+            'src/pages/3desite/apps.html',
+            'src/pages/3desite/apps.html',
+            'src/pages/3desite/apps.html',
+            'src/pages/3desite/apps.html',
+        ];
+
+        const plateMenus = [
+            { name: "3D Esite", link: sitePaths[0], icon: plateIcons[0] },
+            { name: "Antopeloni", link: sitePaths[1], icon: plateIcons[1] },
+            { name: "Zibadis", link: sitePaths[2], icon: plateIcons[2] },
+            { name: "ZibadisPlay", link: sitePaths[3], icon: plateIcons[3] },
+            { name: "ZinatNet", link: sitePaths[4], icon: plateIcons[4] },
+            { name: "AsaieJadoo", link: sitePaths[5], icon: plateIcons[5] },
+            { name: "Shafayaft", link: sitePaths[6], icon: plateIcons[6] },
+            { name: "Yottabyte", link: sitePaths[7], icon: plateIcons[7] }
+        ];
+
+        const navMenu = document.getElementById("navMenu");
+        const siteList = document.getElementById("siteList");
+        const contentContainer = document.getElementById("contentContainer");
+
+        // 🚀 1. افزودن لینک‌ها به منو
+        plateMenus.forEach((menu, index) => {
+            const li = document.createElement("li");
+            const a = document.createElement("a");
+            a.href = "#"; // جلوگیری از باز شدن صفحه جدید
+            a.textContent = menu.name;
+            a.addEventListener("click", () => loadPage(menu.link));
+            li.appendChild(a);
+            navMenu.appendChild(li);
+        });
+
+        // 🚀 2. نمایش آیکون‌ها و عناوین
+        plateMenus.forEach((menu, index) => {
+            const div = document.createElement("div");
+            div.className = "site-item";
+            div.innerHTML = `
+                <img src="${menu.icon}" alt="${menu.name}">
+                <h3>${menu.name}</h3>
+            `;
+            div.addEventListener("click", () => loadPage(menu.link));
+            siteList.appendChild(div);
+        });
+
+        // 🚀 3. تابع بارگذاری صفحات داخل کانتینر
+        function loadPage(pageUrl) {
+            fetch(pageUrl)
+                .then(response => response.text())
+                .then(data => {
+                    contentContainer.innerHTML = data;
+                })
+                .catch(error => {
+                    console.error("خطا در بارگیری صفحه:", error);
+                    contentContainer.innerHTML = "<p>خطایی رخ داد. لطفاً دوباره تلاش کنید.</p>";
+                });
+        }
+    </script>
+
+</body>
+</html>

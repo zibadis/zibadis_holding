@@ -38,12 +38,12 @@
             ]
         },
 
-        { label: "apps", link: "#p1-1" },
-        { label: "blog", link: "#p1-2" },
-        { label: "tutorial", link: "#p1-2" },
-        { label: "about", link: "#p1-2" },
-        { label: "shop", link: "#p1-1" },
-        { label: "services", link: "#p1-2" },
+        { label: "apps", link: "src/pages/3desite/apps.html" },
+        // { label: "blog", link: "#p1-2" },
+        // { label: "tutorial", link: "#p1-2" },
+        // { label: "about", link: "#p1-2" },
+        // { label: "shop", link: "#p1-1" },
+        // { label: "services", link: "#p1-2" },
       ],
       //    2-Antopeloni
       [{
@@ -63,12 +63,13 @@
            
           ]
       },
-      { label: "apps", link: "#p1-1" },
-        { label: "blog", link: "#p1-2" },
-        { label: "tutorial", link: "#p1-2" },
-        { label: "about", link: "#p1-2" },
-        { label: "shop", link: "#p1-1" },
-        { label: "services", link: "#p1-2" },
+      { label: "apps", link: "src/pages/3desite/apps.html" },
+      // { label: "apps", link: "#p1-1" },
+      //   { label: "blog", link: "#p1-2" },
+      //   { label: "tutorial", link: "#p1-2" },
+      //   { label: "about", link: "#p1-2" },
+      //   { label: "shop", link: "#p1-1" },
+      //   { label: "services", link: "#p1-2" },
       ],
       //  3-Zibadis
       [{
@@ -79,13 +80,13 @@
             { name: "Z-3D", src: "icons/z-emergency.png" },
             { name: "Z-Web", src: "icons/z-emergency.png" },
           ]
-      },
-      { label: "apps", link: "#p1-1" },
-        { label: "blog", link: "#p1-2" },
-        { label: "tutorial", link: "#p1-2" },
-        { label: "about", link: "#p1-2" },
-        { label: "shop", link: "#p1-1" },
-        { label: "services", link: "#p1-2" },
+      },    { label: "apps", link: "src/pages/3desite/apps.html" },
+      // { label: "apps", link: "#p1-1" },
+      //   { label: "blog", link: "#p1-2" },
+      //   { label: "tutorial", link: "#p1-2" },
+      //   { label: "about", link: "#p1-2" },
+      //   { label: "shop", link: "#p1-1" },
+      //   { label: "services", link: "#p1-2" },
       ],
       //  4-zibadisplay
       [{
@@ -100,12 +101,12 @@
             { name: "Z-Travel", src: "icons//z-emergency.png" },
           ]
       },
-      { label: "apps", link: "#p1-1" },
-        { label: "blog", link: "#p1-2" },
-        { label: "tutorial", link: "#p1-2" },
-        { label: "about", link: "#p1-2" },
-        { label: "shop", link: "#p1-1" },
-        { label: "services", link: "#p1-2" },
+      { label: "apps", link: "src/pages/3desite/apps.html" },
+        // { label: "blog", link: "#p1-2" },
+        // { label: "tutorial", link: "#p1-2" },
+        // { label: "about", link: "#p1-2" },
+        // { label: "shop", link: "#p1-1" },
+        // { label: "services", link: "#p1-2" },
       ],
       //5-zinat.net
       [{
@@ -118,12 +119,12 @@
             { name: "Z-Arch", src: "icons/z-emergency.png" },
           ]
       },
-      { label: "apps", link: "#p1-1" },
-        { label: "blog", link: "#p1-2" },
-        { label: "tutorial", link: "#p1-2" },
-        { label: "about", link: "#p1-2" },
-        { label: "shop", link: "#p1-1" },
-        { label: "services", link: "#p1-2" },
+      { label: "apps", link: "src/pages/3desite/apps.html" },
+      //   { label: "blog", link: "#p1-2" },
+      //   { label: "tutorial", link: "#p1-2" },
+      //   { label: "about", link: "#p1-2" },
+      //   { label: "shop", link: "#p1-1" },
+      //   { label: "services", link: "#p1-2" },
       ],
       // 6-Asaiejadoo 
       [{
@@ -138,12 +139,12 @@
 
           ]
       },
-      { label: "apps", link: "#p1-1" },
-        { label: "blog", link: "#p1-2" },
-        { label: "tutorial", link: "#p1-2" },
-        { label: "about", link: "#p1-2" },
-        { label: "shop", link: "#p1-1" },
-        { label: "services", link: "#p1-2" },
+      { label: "apps", link: "src/pages/3desite/apps.html" },
+      //   { label: "blog", link: "#p1-2" },
+      //   { label: "tutorial", link: "#p1-2" },
+      //   { label: "about", link: "#p1-2" },
+      //   { label: "shop", link: "#p1-1" },
+      //   { label: "services", link: "#p1-2" },
       ],
       // 7-shafayaft
       [{
@@ -157,12 +158,12 @@
 
           ]
       },
-      { label: "apps", link: "#p1-1" },
-        { label: "blog", link: "#p1-2" },
-        { label: "tutorial", link: "#p1-2" },
-        { label: "about", link: "#p1-2" },
-        { label: "shop", link: "#p1-1" },
-        { label: "services", link: "#p1-2" },
+      { label: "apps", link: "src/pages/3desite/apps.html" },
+      //   { label: "blog", link: "#p1-2" },
+      //   { label: "tutorial", link: "#p1-2" },
+      //   { label: "about", link: "#p1-2" },
+      //   { label: "shop", link: "#p1-1" },
+      //   { label: "services", link: "#p1-2" },
       ],
       //  8-yottabyte
       [{
@@ -171,19 +172,19 @@
             { name: "Z-Data", src: "icons/z-book.png" },
             { name: "Z-Cyber", src: "icons/z-emergency.png" },
             { name: "Z-AI", src: "icons/z-emergency.png" },
-            { name: "Z-Cloud", src: "icons/z-emergency.png" },
+            { name: "Z-Cloud", src: "icons/z-cloud.png" },
             { name: "Z-IoT", src: "icons/z-emergency.png" },
             { name: "Z-Block", src: "icons/z-emergency.png" },
             { name: "Z-Quantum", src: "icons/z-emergency.png" },
           
           ]
       },
-      { label: "apps", link: "#p1-1" },
-        { label: "blog", link: "#p1-2" },
-        { label: "tutorial", link: "#p1-2" },
-        { label: "about", link: "#p1-2" },
-        { label: "shop", link: "#p1-1" },
-        { label: "services", link: "#p1-2" },
+      { label: "apps", link: "src/pages/3desite/apps.html" },
+      //   { label: "blog", link: "#p1-2" },
+      //   { label: "tutorial", link: "#p1-2" },
+      //   { label: "about", link: "#p1-2" },
+      //   { label: "shop", link: "#p1-1" },
+      //   { label: "services", link: "#p1-2" },
         
       ],
     ];
@@ -341,77 +342,112 @@ scene.add(mainGroup);
       }
     }
     createPlates();
-    function showPlateContent(i) {
-      // گرفتن فایل HTML مربوط به این بشقاب
-      const filePath = sitePaths[i];
-      // لود فایل با fetch
-      fetch(filePath)
-        .then(resp => resp.text())
-        .then(htmlData => {
-          // قرار دادن محتوای فایل در div (مثلاً #modalContentArea)
-          document.getElementById('modalContentArea').innerHTML = htmlData;
-          // نمایش مودال با انیمیشن
-          const infoModal = document.getElementById('infoModal');
-          infoModal.classList.add('show');
-          // می‌توانیم اگر خواستیم منو را هم تغییر دهیم
-          // updatePlateMenu(i); ...
-        });
-    }
-    // وقتی روی بشقاب i کلیک شود:
-    function loadHTMLinDiv(i) {
-      fetch(sitePaths[i])
-        .then(resp => resp.text())
-        .then(htmlData => {
-          document.getElementById('siteContainer').innerHTML = htmlData;
-          document.getElementById('siteContainer').style.display = 'block';
-        });
-    }
-    function updatePlateMenu(plateIndex) {
-      const navList = document.getElementById("topMenuList");
-      // پاک کردن آیتم‌های قبلی
-      navList.innerHTML = "";
-      container.innerHTML = "";
-      // const structuredData = plateMenus.map((plate) => {
-      //   return plate.map((item) => {
-      //     if (item.inside) {
-      //       return item.inside.map(icon => `Icon: ${icon.name} (${icon.src})`);
-      //     } else {
-      //       return `Menu: ${item.label} -> ${item.link}`;
-      //     }
-      //   });
-      // });
-      // console.log(structuredData);
-      // گرفتن آیتم‌های منوی این بشقاب
-      const currentMenu = plateMenus[plateIndex] || [];
-      // افزودن آیتم‌های جدید
-      currentMenu.forEach(item => {
-        if (item.inside) {
-          item.inside.forEach(icon => {
-            const wrapper = document.createElement("div");
-            wrapper.classList.add("item-wrapper");
-            const itemDiv = document.createElement("div");
-            itemDiv.classList.add("item");
-            const img = document.createElement("img");
-            img.src = icon.src;
-            img.alt = icon.name;
-            const title = document.createElement("div");
-            title.classList.add("item-title");
-            title.textContent = icon.name;
-            itemDiv.appendChild(img);
-            wrapper.appendChild(itemDiv);
-            wrapper.appendChild(title);
-            container.appendChild(wrapper);
+   
+
+
+
+
+
+
+
+
+
+
+ 
+   
+
+
+    function loadPage(pageUrl) {
+      fetch(pageUrl)
+          .then(response => response.text())
+          .then(data => {
+              container.innerHTML = data;
+          })
+          .catch(error => {
+              console.error("خطا در بارگیری صفحه:", error);
+              container.innerHTML = "<p>خطایی رخ داد. لطفاً دوباره تلاش کنید.</p>";
           });
-        }
-        const li = document.createElement("li");
-        const a = document.createElement("a");
-        a.textContent = item.label; // برچسب
-        a.href = item.link;         // لینک
-        li.appendChild(a);
-        navList.appendChild(li);
-      });
+  }
+
+
+    async function updatePlateMenu(plateIndex) {
+      const navList = document.getElementById("topMenuList");
+      const container = document.getElementById("container"); // Ensure container exists
+      
+      navList.innerHTML = "";
+      container.innerHTML = ""; // Clear previous content
+      
+      const currentMenu = plateMenus[plateIndex] || [];
+  
+      for (const item of currentMenu) {
+          try {
+              // const response = await fetch(item.link);
+              // const data = await response.text();
+              // container.innerHTML += data; // Append instead of replace
+              loadPage(item.link)
+          } catch (error) {
+              console.error("Error loading the HTML pages:", error);
+          }
+  
+          const li = document.createElement("li");
+          const a = document.createElement("a");
+          a.textContent = item.label; 
+          a.href = item.link;  
+          li.appendChild(a);
+          navList.appendChild(li);
+      }
+  
       waveInMenuItems();
-    }
+  }
+  
+  
+
+
+
+
+
+
+
+
+   
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     const modal = document.getElementById('infoModal');
     // متغیرهای state
 // متغیرهای state
