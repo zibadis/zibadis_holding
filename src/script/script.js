@@ -11,180 +11,90 @@
       'src/images/logos/sahfayaft.png',
       'src/images/logos/yottabyte.png',
     ];
-    const sitePaths = [
-      'src/pages/site1.html',
-      'src/pages/site2.html',
-      'src/pages/site3.html',
-      'src/pages/site4.html',
-      'src/pages/site5.html',
-      'src/pages/site6.html',
-      'src/pages/site7.html',
-      'src/pages/site8.html'
-    ];
+ 
 
     const container = document.getElementById("container");
 
     const plateMenus = [
       //    1-3desite
       [
-        {
-          inside:
-            [
-              { name: "Z-Scan", src: "icons/z-book.png" },
-              { name: "Z-Print", src: "icons/z-emergency.png" },
-              { name: "Z-Model", src: "icons/z-emergency.png" },
-              { name: "Z-AR", src: "icons/z-emergency.png" },
-              
-            ]
-        },
+   
 
         { label: "apps", link: "src/pages/3desite/apps.html" },
-        // { label: "blog", link: "#p1-2" },
-        // { label: "tutorial", link: "#p1-2" },
-        // { label: "about", link: "#p1-2" },
-        // { label: "shop", link: "#p1-1" },
-        // { label: "services", link: "#p1-2" },
+        { label: "blog", link: "src/pages/3desite/blog.html" },
+        { label: "tutorial", link: "src/pages/3desite/tutorial.html" },
+        { label: "about", link: "src/pages/3desite/about.html" },
+        { label: "shop", link: "src/pages/3desite/shop.html" },
+        { label: "services", link: "src/pages/3desite/services.html" },
+      
       ],
       //    2-Antopeloni
-      [{
-        inside:
-          [
-            { name: "Z-Doctor", src: "icons/z-book.png" },
-            { name: "Z-Lab", src: "icons/z-emergency.png" },
-            { name: "Z-Pharma", src: "icons/z-emergency.png" },
-            { name: "Z-Medical", src: "icons/z-emergency.png" },
-            { name: "Z-Emergency ", src: "icons/z-emergency.png" },
-            { name: "Z-Fitness", src: "icons/z-emergency.png" },
-            { name: "Z-Nutrition", src: "icons/z-emergency.png" },
-            { name: "Z-Psychology", src: "icons/z-emergency.png" },
-            { name: "Z-WomenCare", src: "icons/z-emergency.png" },
-            { name: "Z-Baby", src: "icons/z-emergency.png" },
-            
-           
-          ]
-      },
-      { label: "apps", link: "src/pages/3desite/apps.html" },
-      // { label: "apps", link: "#p1-1" },
-      //   { label: "blog", link: "#p1-2" },
-      //   { label: "tutorial", link: "#p1-2" },
-      //   { label: "about", link: "#p1-2" },
-      //   { label: "shop", link: "#p1-1" },
-      //   { label: "services", link: "#p1-2" },
+      [
+     
+      { label: "apps", link: "src/pages/antopleoni/apps.html" },
+      { label: "blog", link: "src/pages/antopleoni/blog.html" },
+      { label: "tutorial", link: "src/pages/antopeloni/tutorial.html" },
+      { label: "about", link: "src/pages/antopeloni/about.html" },
+      { label: "shop", link: "src/pages/antopeloni/shop.html" },
+      { label: "services", link: "src/pages/antopeloni/services.html" },
       ],
       //  3-Zibadis
-      [{
-        inside:
-          [
-            { name: "Z-Graphic", src: "icons/z-book.png" },
-            { name: "Z-Motion", src: "icons/z-emergency.png" },
-            { name: "Z-3D", src: "icons/z-emergency.png" },
-            { name: "Z-Web", src: "icons/z-emergency.png" },
-          ]
-      },    { label: "apps", link: "src/pages/3desite/apps.html" },
-      // { label: "apps", link: "#p1-1" },
-      //   { label: "blog", link: "#p1-2" },
-      //   { label: "tutorial", link: "#p1-2" },
-      //   { label: "about", link: "#p1-2" },
-      //   { label: "shop", link: "#p1-1" },
-      //   { label: "services", link: "#p1-2" },
+      [ 
+         { label: "apps", link: "src/pages/zibadis/apps.html" },
+         { label: "blog", link: "src/pages/zibadis/blog.html" },
+         { label: "tutorial", link: "src/pages/zibadistutorial.html" },
+         { label: "about", link: "src/pages/zibadis/about.html" },
+         { label: "shop", link: "src/pages/zibadis/shop.html" },
+         { label: "services", link: "src/pages/zibadis/services.html" },
+     
       ],
       //  4-zibadisplay
-      [{
-        inside:
-          [
-            { name: "Z-Movie", src: "icons/z-book.png" },
-            { name: "Z-Music", src: "icons/z-emergency.png" },
-            { name: "Z-Books", src: "icons/z-emergency.png" },
-            { name: "Z-Games", src: "icons/z-emergency.png" },
-            { name: "Z-Sports", src: "icons/z-emergency.png" },
-            { name: "Z-Books", src: "icons/z-emergency.png" },
-            { name: "Z-Travel", src: "icons//z-emergency.png" },
-          ]
-      },
-      { label: "apps", link: "src/pages/3desite/apps.html" },
-        // { label: "blog", link: "#p1-2" },
-        // { label: "tutorial", link: "#p1-2" },
-        // { label: "about", link: "#p1-2" },
-        // { label: "shop", link: "#p1-1" },
-        // { label: "services", link: "#p1-2" },
+      [ 
+        { label: "apps", link: "src/pages/zibadisplay/apps.html" },
+        { label: "blog", link: "src/pages/zibadisplay/blog.html" },
+        { label: "tutorial", link: "src/pages/zibadisplay/tutorial.html" },
+        { label: "about", link: "src/pages/zibadisplay/about.html" },
+        { label: "shop", link: "src/pages/zibadisplay/shop.html" },
+        { label: "services", link: "src/pages/zibadisplay/services.html" },
       ],
       //5-zinat.net
-      [{
-        inside:
-          [
-            { name: "Z-Fashion", src: "icons/z-book.png" },
-            { name: "Z-Arch", src: "icons/z-emergency.png" },
-            { name: "Z-Jewelry", src: "icons/z-emergency.png" },
-            { name: "Z-Enviro", src: "icons/z-emergency.png" },
-            { name: "Z-Arch", src: "icons/z-emergency.png" },
-          ]
-      },
-      { label: "apps", link: "src/pages/3desite/apps.html" },
-      //   { label: "blog", link: "#p1-2" },
-      //   { label: "tutorial", link: "#p1-2" },
-      //   { label: "about", link: "#p1-2" },
-      //   { label: "shop", link: "#p1-1" },
-      //   { label: "services", link: "#p1-2" },
+      [
+     
+      { label: "apps", link: "src/pages/zinatnet/apps.html" },
+      { label: "blog", link: "src/pages/zinatnet/blog.html" },
+      { label: "tutorial", link: "src/pages/zinatnet/tutorial.html" },
+      { label: "about", link: "src/pages/zinatnet/about.html" },
+      { label: "shop", link: "src/pages/zinatnet/shop.html" },
+      { label: "services", link: "src/pages/zinatnet/services.html" },
       ],
       // 6-Asaiejadoo 
-      [{
-        inside:
-          [
-            { name: "Z-Bank", src: "icons/z-book.png" },
-            { name: "Z-Insurance", src: "icons/z-emergency.png" },
-            { name: "Z-Education", src: "icons/z-emergency.png" },
-            { name: "Z-Transport ", src: "icons/z-emergency.png" },
-            { name: "Z-Energy", src: "icons/z-emergency.png" },
-           
-
-          ]
-      },
-      { label: "apps", link: "src/pages/3desite/apps.html" },
-      //   { label: "blog", link: "#p1-2" },
-      //   { label: "tutorial", link: "#p1-2" },
-      //   { label: "about", link: "#p1-2" },
-      //   { label: "shop", link: "#p1-1" },
-      //   { label: "services", link: "#p1-2" },
+      [
+     
+      { label: "apps", link: "src/pages/asaiejadoo/apps.html" },
+      { label: "blog", link: "src/pages/asaiejadoo/blog.html" },
+      { label: "tutorial", link: "src/pages/asaiejadoo/tutorial.html" },
+      { label: "about", link: "src/pages/asaiejadoo/about.html" },
+      { label: "shop", link: "src/pages/asaiejadoo/shop.html" },
+      { label: "services", link: "src/pages/asaiejadoo/services.html" },
       ],
       // 7-shafayaft
-      [{
-        inside:
-          [
-            { name: "Z-Meditate", src: "icons/z-book.png" },
-            { name: "Z-Focus", src: "icons/z-emergency.png" },
-            { name: "Z-AntiStress", src: "icons/z-emergency.png" },
-            { name: "Z-Behavior", src: "icons/z-emergency.png" },
-         
-
-          ]
-      },
-      { label: "apps", link: "src/pages/3desite/apps.html" },
-      //   { label: "blog", link: "#p1-2" },
-      //   { label: "tutorial", link: "#p1-2" },
-      //   { label: "about", link: "#p1-2" },
-      //   { label: "shop", link: "#p1-1" },
-      //   { label: "services", link: "#p1-2" },
+      [,
+        { label: "apps", link: "src/pages/shafayaft/apps.html" },
+        { label: "blog", link: "src/pages/shafayaft/blog.html" },
+        { label: "tutorial", link: "src/pages/shafayaft/tutorial.html" },
+        { label: "about", link: "src/pages/shafayaft/about.html" },
+        { label: "shop", link: "src/pages/shafayaft/shop.html" },
+        { label: "services", link: "src/pages/shafayaft/services.html" },
+       
       ],
       //  8-yottabyte
-      [{
-        inside:
-          [
-            { name: "Z-Data", src: "icons/z-book.png" },
-            { name: "Z-Cyber", src: "icons/z-emergency.png" },
-            { name: "Z-AI", src: "icons/z-emergency.png" },
-            { name: "Z-Cloud", src: "icons/z-cloud.png" },
-            { name: "Z-IoT", src: "icons/z-emergency.png" },
-            { name: "Z-Block", src: "icons/z-emergency.png" },
-            { name: "Z-Quantum", src: "icons/z-emergency.png" },
-          
-          ]
-      },
-      { label: "apps", link: "src/pages/3desite/apps.html" },
-      //   { label: "blog", link: "#p1-2" },
-      //   { label: "tutorial", link: "#p1-2" },
-      //   { label: "about", link: "#p1-2" },
-      //   { label: "shop", link: "#p1-1" },
-      //   { label: "services", link: "#p1-2" },
+      [,
+        { label: "apps", link: "src/pages/yottabyte/apps.html" },
+        { label: "blog", link: "src/pages/yottabyte/blog.html" },
+        { label: "tutorial", link: "src/pages/yottabyte/tutorial.html" },
+        { label: "about", link: "src/pages/yottabyte/about.html" },
+        { label: "shop", link: "src/pages/yottabyte/shop.html" },
+        { label: "services", link: "src/pages/yottabyte/services.html" },
         
       ],
     ];
@@ -354,37 +264,30 @@ scene.add(mainGroup);
 
 
  
-   
-
-
     function loadPage(pageUrl) {
       fetch(pageUrl)
           .then(response => response.text())
           .then(data => {
-              container.innerHTML = data;
+              document.getElementById("container").innerHTML = data;
           })
           .catch(error => {
               console.error("خطا در بارگیری صفحه:", error);
-              container.innerHTML = "<p>خطایی رخ داد. لطفاً دوباره تلاش کنید.</p>";
+              document.getElementById("container").innerHTML = "<p>خطایی رخ داد. لطفاً دوباره تلاش کنید.</p>";
           });
   }
-
-
-    async function updatePlateMenu(plateIndex) {
+  
+  async function updatePlateMenu(plateIndex) {
       const navList = document.getElementById("topMenuList");
-      const container = document.getElementById("container"); // Ensure container exists
+      const container = document.getElementById("container"); // اطمینان از وجود کانتینر
       
       navList.innerHTML = "";
-      container.innerHTML = ""; // Clear previous content
+      container.innerHTML = ""; // پاک کردن محتوای قبلی
       
       const currentMenu = plateMenus[plateIndex] || [];
   
       for (const item of currentMenu) {
           try {
-              // const response = await fetch(item.link);
-              // const data = await response.text();
-              // container.innerHTML += data; // Append instead of replace
-              loadPage(item.link)
+              // ابتدا اولین صفحه را لود نکنیم تا فقط با کلیک اجرا شود
           } catch (error) {
               console.error("Error loading the HTML pages:", error);
           }
@@ -392,13 +295,21 @@ scene.add(mainGroup);
           const li = document.createElement("li");
           const a = document.createElement("a");
           a.textContent = item.label; 
-          a.href = item.link;  
+          a.href = "#";  // غیرفعال کردن تغییر مسیر
+          a.addEventListener("click", (event) => {
+              event.preventDefault(); // جلوگیری از باز شدن لینک در صفحه جدید
+              loadPage(item.link);
+          });
+  
           li.appendChild(a);
           navList.appendChild(li);
       }
   
       waveInMenuItems();
   }
+  
+
+ 
   
   
 
