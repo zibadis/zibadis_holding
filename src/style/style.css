@@ -693,6 +693,7 @@ background-color: #A3BAD3;
     height: 80px;
     float: left;
     margin: 20px;
+	color: #000;
 }
 
 .item {
@@ -700,23 +701,33 @@ background-color: #A3BAD3;
     justify-content: center;
     text-align: center;
     text-decoration: none;
+	cursor: pointer;
 	
 
 }
-
+.item-wrapper:hover{ 
+ color: white;
+}
+.item-wrapper:hover img{ 
+	border-radius: 2px;
+	transform: translateY(5px);
+   }
 .item img {
+	transition: all 0.1s ease-in-out;
     width: 80px;
     height: 80px;
     border-radius: 12px;
 }
 
 .item-title {
+	transition: all 0.1s ease-in-out;
     font-size: 16px;
     font-weight: bold;
     width: 80;
     text-align: center;
     overflow: hidden;
     text-overflow: ellipsis;
+ 
 
 
 
