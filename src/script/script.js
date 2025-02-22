@@ -19,7 +19,7 @@ const container = document.getElementById("container");
 const plateMenus = [
   //    1-3desite
   [
-    { logo: "./src/images/logos/3dEsite.svg" },
+    { logo: "./src/images/logos/3desite.svg" },
 
     { label: "apps", link: "./src/pages/3desite/apps.html" },
 
@@ -68,7 +68,7 @@ const plateMenus = [
 
   ],
   // 7-shafayaft
-  [{ logo: "./src/images/logos/sahfayaft.svg" },
+  [{ logo: "./src/images/logos/shafayaft.svg" },
   { label: "apps", link: "./src/pages/shafayaft/apps.html" },
 
   { label: "about", link: "./src/pages/shafayaft/about.html" },
