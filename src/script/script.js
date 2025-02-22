@@ -61,7 +61,7 @@ const plateMenus = [
   ],
   // 6-Asaiejadoo 
   [
-    { logo: "./src/images/logos/asaieJadoo.svg" },
+    { logo: "./src/images/logos/asaiejadoo.svg" },
     { label: "apps", link: "./src/pages/asaiejadoo/apps.html" },
 
     { label: "about", link: "./src/pages/asaiejadoo/about.html" },
@@ -563,7 +563,7 @@ function hidePlateModal() {
   gsap.to(modal, {
     duration: 0.4,
     opacity: 0,
-    scale: 0.7,
+    scale: 1,
     ease: "power2.inOut",
     onComplete: () => {
       modal.style.display = 'none';
