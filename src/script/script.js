@@ -1,4 +1,9 @@
 
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
+ 
 const ZibadisHoldingIcon = './src/images/logos/zibadis-holding.png';
 
 const plateIcons = [
@@ -130,7 +135,12 @@ scene.add(mainGroup);
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100);
 camera.position.set(0, 0, 5);
 scene.add(camera);
-const renderer = new THREE.WebGLRenderer({ antialias: true, canvas: document.querySelector('canvas.webgl') });
+ 
+// Then pass it to the renderer constructor
+const renderer = new THREE.WebGLRenderer();
+renderer.setSize( window.innerWidth, window.innerHeight );
+renderer.setAnimationLoop( animate );
+document.body.appendChild( renderer.domElement );
 // دیگر append نکنید، چون خودتان از قبل <canvas> را در صفحه دارید
 renderer.setSize(window.innerWidth, window.innerHeight);
 // renderer.setClearColor(0xff0000, 1);
@@ -144,7 +154,7 @@ const sizes = {
 }
 
 document.body.appendChild(renderer.domElement);
-const controls = new THREE.OrbitControls(camera, renderer.domElement);
+const controls = new OrbitControls(camera, renderer.domElement);
 controls.minPolarAngle = 1.17079;
 controls.maxPolarAngle = 1.17079;
 controls.enableDamping = true;
@@ -164,7 +174,7 @@ pointLight2.position.y = 0.1 * Math.sin(Date.now() * 0.002) + 0.2;
 pointLight2.rotation.y += 0.005;
 const ZibadisHolding = new THREE.Object3D();
 let plates = [];
-const gltfLoader = new THREE.GLTFLoader(loadingManager);
+const gltfLoader = new GLTFLoader(loadingManager);
 const textureLoader = new THREE.TextureLoader(loadingManager);
 const cubeTextureLoader = new THREE.CubeTextureLoader()
 const environmentMap = cubeTextureLoader.load([
@@ -269,11 +279,11 @@ function loadPage(pageUrl) {
   fetch(pageUrl)
     .then(response => response.text())
     .then(data => {
-      document.getElementById("container").innerHTML = data;
+      document.getElementById("container-2").innerHTML = data;
     })
     .catch(error => {
       console.error("خطا در بارگیری صفحه:", error);
-      document.getElementById("container").innerHTML = "<p>خطایی رخ داد. لطفاً دوباره تلاش کنید.</p>";
+      document.getElementById("container-2").innerHTML = "<p>خطایی رخ داد. لطفاً دوباره تلاش کنید.</p>";
     });
 }
 
@@ -291,7 +301,7 @@ function loadPage(pageUrl) {
 
 async function updatePlateMenu(plateIndex) {
   const navList = document.getElementById("topMenuList");
-  const container = document.getElementById("container"); // اطمینان از وجود کانتینر
+  const container = document.getElementById("container-2"); // اطمینان از وجود کانتینر
 
   const brand = document.getElementById("brand");
   // پاک کردن محتوای قبلی
@@ -508,7 +518,7 @@ parentDiv.insertAdjacentHTML("afterbegin", layout);
 
 // تابع برای حرکت گروه به پایین
 function moveGroupDown(distance) {
-  const modal = document.getElementById("infoModal");
+  // const modal = document.getElementById("infoModal");
 
   // بررسی باز بودن مودال
   if (isModalOpen) {
@@ -549,12 +559,15 @@ function showPlateModal(index) {
   gsap.to(modal, {
     duration: 0.5,
     opacity: 1,
-    scale: 1,
+   
     ease: "back.out(1.7)"
   });
 
   updatePlateMenu(index);
 }
+
+
+ 
 
 function hidePlateModal() {
   const modal = document.getElementById('infoModal');
@@ -563,7 +576,7 @@ function hidePlateModal() {
   gsap.to(modal, {
     duration: 0.4,
     opacity: 0,
-    scale: 1,
+ 
     ease: "power2.inOut",
     onComplete: () => {
       modal.style.display = 'none';
@@ -580,7 +593,11 @@ function hidePlateModal() {
     }
   });
 }
+const my_element=document.getElementById("close");
+my_element.addEventListener("click", function (e) {
 
+  hidePlateModal();
+});
 
 function waveInMenuItems() {
 
