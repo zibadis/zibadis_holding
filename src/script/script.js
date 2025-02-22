@@ -1,7 +1,7 @@
 
-import * as THREE from 'three';
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+// import * as THREE from 'three';
+// import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+// import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
  
 const ZibadisHoldingIcon = './src/images/logos/zibadis-holding.png';
@@ -154,7 +154,7 @@ const sizes = {
 }
 
 document.body.appendChild(renderer.domElement);
-const controls = new OrbitControls(camera, renderer.domElement);
+const controls = new THREE.OrbitControls(camera, renderer.domElement);
 controls.minPolarAngle = 1.17079;
 controls.maxPolarAngle = 1.17079;
 controls.enableDamping = true;
@@ -174,7 +174,7 @@ pointLight2.position.y = 0.1 * Math.sin(Date.now() * 0.002) + 0.2;
 pointLight2.rotation.y += 0.005;
 const ZibadisHolding = new THREE.Object3D();
 let plates = [];
-const gltfLoader = new GLTFLoader(loadingManager);
+const gltfLoader = new THREE.GLTFLoader(loadingManager);
 const textureLoader = new THREE.TextureLoader(loadingManager);
 const cubeTextureLoader = new THREE.CubeTextureLoader()
 const environmentMap = cubeTextureLoader.load([
